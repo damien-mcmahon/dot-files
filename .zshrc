@@ -102,6 +102,10 @@ source $ZSH/oh-my-zsh.sh
 alias v="nvim"
 alias sz="source ~/.zshrc"
 
+# Work directory
+alias work="cd ~/Work"
+alias dl="work && dl-worktree"
+
 man() {
   env \
        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
@@ -117,3 +121,6 @@ man() {
 export EDITOR='nvim'
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
