@@ -37,3 +37,8 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- Code folding
+opt.foldmethod = "indent"
+-- opt.nofoldenable = true
+opt.foldlevel = 99
