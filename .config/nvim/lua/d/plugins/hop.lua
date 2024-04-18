@@ -7,16 +7,16 @@ return {
 		-- you can configure Hop the way you like here; see :h hop-config
 		hop.setup({ keys = "etovxqpdygfblzhckisuran" })
 		local directions = require("hop.hint").HintDirection
-		vim.keymap.set("", "<leader>f", function()
+		vim.keymap.set("n", "f", function()
 			hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
 		end, { remap = true })
-		vim.keymap.set("", "<leader>F", function()
+		vim.keymap.set("n", "F", function()
 			hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
 		end, { remap = true })
-		vim.keymap.set("", "<leader>t", function()
+		vim.keymap.set("n", "t", function()
 			hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
 		end, { remap = true })
-		vim.keymap.set("", "<leader>T", function()
+		vim.keymap.set("n", "T", function()
 			hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
 		end, { remap = true })
 	end,
