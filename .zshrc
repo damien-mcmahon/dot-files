@@ -242,6 +242,7 @@ alias wiz="dl && wizard"
 alias al="aws-vault exec ennismore-devandlive-admin"
 alias alo="aws sso logout && aws sso login --sso-session dm-ennismore"
 alias sl="aws-vault exec ennismore-staging-admin"
+alias gromm="git rebase origin/main"
 
 man() {
   env \
