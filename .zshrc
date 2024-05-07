@@ -110,6 +110,8 @@ alias wiz="dl && wizard"
 alias al="aws-vault exec ennismore-devandlive-admin"
 alias alo="aws sso logout && aws sso login --sso-session dm-ennismore"
 alias sl="aws-vault exec ennismore-staging-admin"
+alias dlt="work && disloyalty-tools/readonly-developer-access"
+alias tunn="dlt && source envs && make start_tunnel"
 
 man() {
   env \
@@ -242,6 +244,8 @@ alias wiz="dl && wizard"
 alias al="aws-vault exec ennismore-devandlive-admin"
 alias alo="aws sso logout && aws sso login --sso-session dm-ennismore"
 alias sl="aws-vault exec ennismore-staging-admin"
+alias dlt="work && disloyalty-tools/readonly-developer-access"
+alias tunn="dlt && source envs && make start_tunnel"
 alias gromm="git rebase origin/main"
 
 man() {
